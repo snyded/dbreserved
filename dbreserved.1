@@ -1,0 +1,29 @@
+.\"
+.\" @(#) dbreserved.1 1.2  94/09/25 12:21:16
+.\"
+.TH DBRESERVED 1 "dbreserved 1.2"
+.SH NAME
+dbreserved \- scans Informix database tables for key words
+.SH SYNOPSIS
+dbreserved \-d dbname [\-t tabname]
+.SH DESCRIPTION
+.I Dbreserved
+will scan Informix database tables for key (reserved) words and
+print those words to stdout.
+.SH OPTIONS
+.TP
+.B \-d
+database name
+.TP
+.B \-t
+table name
+.SH NOTES
+.I Dbreserved
+requires that an Informix database engine be installed on the machine
+running it.
+.PP
+If a table name is not specified, the entire database is scanned.
+.PP
+Wild-card characters may be used in the table name if desired.
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>
